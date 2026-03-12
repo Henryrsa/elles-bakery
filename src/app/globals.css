@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FFF9F0;
+  --foreground: #4A4A4A;
+  --primary: #D4A5A5;
+  --primary-dark: #B88787;
+  --secondary: #F5E6E0;
+  --accent: #C9A86C;
+  --accent-gold: #D4AF37;
+  --text-light: #7A7A7A;
+  --white: #FFFFFF;
+  --shadow: rgba(180, 150, 150, 0.15);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-accent-gold: var(--accent-gold);
+  --color-text-light: var(--text-light);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Georgia', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', 'Georgia', serif;
+}
+
+.font-display {
+  font-family: 'Playfair Display', 'Georgia', serif;
+}
+
+.font-body {
+  font-family: 'Lato', 'Helvetica', sans-serif;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
