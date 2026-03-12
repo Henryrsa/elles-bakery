@@ -141,7 +141,7 @@ Private - All rights reserved
 
 ## 👤 Author
 
-- **Developer:** OpenCode Assistant
+- **Developer:** Mukwevho Livhuwani Henry
 - **Client:** Elle's Bakery, Pretoria, South Africa
 
 ---
